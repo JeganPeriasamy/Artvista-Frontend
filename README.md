@@ -1,46 +1,46 @@
-# Artvista-Frontend
-
-https://artvistawp.netlify.app 
-4000003560000008 
-
-
-
-Here's a detailed template for a GitHub README file tailored for a frontend project. This template includes sections that provide an overview, installation instructions, usage guidelines, and other important information to help others understand and contribute to your project.
-
----
-
-# Project Name
-
-A brief description of what your project does and what problem it solves.
+# ARTVISTA GALLERY PAINTING WEB APPLICATION (FRONTEND)
+- Artistic Paintings are Displayed category wise and Admin panel control to control the products upload
+- Artists (Admin) can fill out their profiles with essential details such as name, bio, and portfolio, allowing them to showcase their work effectively (CRUD) Using Admin Panel
+- Used Stripe for payment test  ( Stripe India Payment Code :4000003560000008)
 
 ## Table of Contents
-
 1. [Introduction](#introduction)
 2. [Demo](#demo)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Installation](#installation)
 6. [Usage](#usage)
-7. [Contributing](#contributing)
-8. [License](#license)
+7. [License](#license)
 9. [Contact](#contact)
 
 ## Introduction
 
-A more detailed explanation of the project, its purpose, and its goals.
+- Users can view all artwork information including title, artist, description, price, and images. 
+- Users can search & filter based on their preferences by category of arts.
+- Artists (Admin) can fill out their profiles with essential details such as name, bio, and portfolio, allowing them to showcase their work effectively (CRUD).
+- Users can add artwork to their shopping cart for future purchase.
+- For secure transactions, the platform implements a checkout process integrated with payment gateways such as Stripe or RazorPay
 
-## Demo
+## Demo URL : https://artvistawp.netlify.app 
+![Demo Screenshot]
+![artvista](https://github.com/JeganPeriasamy/Artvista-Frontend/assets/166896131/85b7834a-370b-4748-b38c-0ff63a66f243)
 
-Include a link to a live demo of your project if available, or provide screenshots/gifs showing the project in action.
-
-![Demo Screenshot](link-to-screenshot.png)
 
 ## Features
+Development Phase:
 
-- Feature 1
-- Feature 2
-- Feature 3
-- ...
+Frontend Development:
+- Used React for building a dynamic and interactive UI.
+- Created separate components for the login and registration forms.
+- Used React state and Formik to manage form inputs and validation messages. 
+- Utilized React Router for handling client-side routing.
+- Implemented Redux or the Context API for state management across the application.  
+
+Backend Development:
+- Set up Node.js and Express.js for creating RESTful APIs to handle requests and responses.
+- Used MongoDB for storing and managing tasks, user data, and authentication details.
+- Implement JWT, and Bcrypt for secure access.
+- Integrated middleware for user permissions and role-based access control.
 
 ## Technologies Used
 
@@ -50,9 +50,12 @@ List the major technologies, libraries, and tools used in the project.
 - CSS3
 - JavaScript (ES6+)
 - [React](https://reactjs.org/)
-- [Redux](https://redux.js.org/) (if applicable)
-- [Bootstrap](https://getbootstrap.com/) (or any other CSS framework)
-- ...
+- [React State mangement](https://reactjs.org/) (if applicable)
+- [Bootstrap](https://getbootstrap.com/) 
+- [Express JS](https://expressjs.com/)
+- [NODE JS](https://nodejs.com/)
+- [Mongo DB](https://mongodb.com/)
+- [STRIPE](https://stripe.com/) 
 
 ## Installation
 
@@ -90,41 +93,5 @@ Provide instructions and examples for using the project.
 
 3. **Follow the on-screen instructions to interact with the app.**
 
-## Contributing
 
-Instructions on how others can contribute to your project.
 
-1. **Fork the repository**
-2. **Create a new branch:**
-   ```sh
-   git checkout -b feature/your-feature-name
-   ```
-
-3. **Make your changes**
-4. **Commit your changes:**
-   ```sh
-   git commit -m "Add your feature"
-   ```
-
-5. **Push to the branch:**
-   ```sh
-   git push origin feature/your-feature-name
-   ```
-
-6. **Submit a pull request**
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details on our code of conduct, and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - your.email@example.com
-
-Project Link: [https://github.com/your-username/your-repository](https://github.com/your-username/your-repository)
-
----
-
-Feel free to adjust this template to better fit the specifics of your project.
