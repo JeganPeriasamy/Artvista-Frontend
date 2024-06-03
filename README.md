@@ -1,7 +1,6 @@
 # ARTVISTA GALLERY PAINTING WEB APPLICATION (FRONTEND)
 - Artistic Paintings are Displayed category wise and Admin panel control to control the products upload
 - Artists (Admin) can fill out their profiles with essential details such as name, bio, and portfolio, allowing them to showcase their work effectively (CRUD) Using Admin Panel
-- Used Stripe for payment test  ( Stripe India Payment Code :4000003560000008)
 
 ## Table of Contents
 1. [Introduction](#introduction)
