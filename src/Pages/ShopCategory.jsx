@@ -8,6 +8,7 @@ import { ShopContext } from '../Context/ShopContext';
 const ShopCategory = (props) => {
   const { url } = useContext(ShopContext);
   const [allproducts, setAllProducts] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const fetchInfo = () => {
     fetch(`${url}/allproducts`)
@@ -27,29 +28,40 @@ const ShopCategory = (props) => {
     });
   };
 
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredProducts = allproducts
+    .filter(item => item.category === props.category)
+    .filter(item => item.name.toLowerCase().includes(searchQuery.toLowerCase()));
+
   return (
     <div className='shop-category'>
       <img className="shopcategory-banner" src={props.banner} alt="Category Banner" />
       <div className="shopcategory-indexSort">
-        <p><span>Showing 1 to 12</span> out of 54 Products</p>
+        <p><span>Showing 1 to {filteredProducts.length}</span> out of {allproducts.length} Products</p>
         <div className="shopcategory-sort">
-          Sort By <img src={dropdown_icon} alt="Dropdown Icon" />
+          <input 
+            type="text" 
+            placeholder="Search products..." 
+            value={searchQuery} 
+            onChange={handleSearchChange} 
+          />
         </div>
       </div>
 
       <div className="shopcategory-products">
-        {allproducts.length > 0 ? (
-          allproducts
-            .filter(item => item.category === props.category)
-            .map((item, i) => (
-              <Item 
-                id={item._id}
-                key={i}
-                name={item.name}
-                image={item.image}
-                price={item.price}
-              />
-            ))
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((item, i) => (
+            <Item 
+              id={item._id}
+              key={i}
+              name={item.name}
+              image={item.image}
+              price={item.price}
+            />
+          ))
         ) : (
           <p>No products available.</p>
         )}
