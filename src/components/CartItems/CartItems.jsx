@@ -5,7 +5,7 @@ import cross_icon from "/cart_cross_icon.png";
 import { useNavigate } from "react-router-dom";
 
 const CartItems = () => {
-  const { products, cartItems, removeFromCart, getTotalCartAmount, url } = useContext(ShopContext);
+  const { addToCart, products, cartItems, removeFromCart, getTotalCartAmount, url } = useContext(ShopContext);
   const navigate = useNavigate();
 
   return (
@@ -30,7 +30,8 @@ const CartItems = () => {
                 <p>${item.price}</p>
                 <p>{quantity}</p>
                 <p>${item.price * quantity}</p>
-                <p className='cross' onClick={() => removeFromCart(item._id)}>X</p>
+                <p className='cross' onClick={() => addToCart(item._id)}>Add</p>
+                <p className='cross' onClick={() => removeFromCart(item._id)}>Delete</p>
               </div>
               <hr />
             </div>
