@@ -1,10 +1,10 @@
 .add{
     color:green;
-    font-size:larger;
+    cursor:pointer;
 }
 .cross{
     color:red;
-    font-size:larger;
+    cursor:pointer;
 }
 .cartitems{
     margin: 100px 10%;
