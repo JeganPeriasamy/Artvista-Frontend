@@ -31,8 +31,8 @@ const CartItems = () => {
                 <p>${item.price}</p>
                 <p>{quantity}</p>
                 <p>${item.price * quantity}</p>
-                <p className='cross' onClick={() => addToCart(item._id)}>Add</p>
-                <p className='cross' onClick={() => removeFromCart(item._id)}>Delete</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCISsj0zDrrBT5yDWZokYr2f6R4xKgUQtrfg&s" className='cross' onClick={() => addToCart(item._id)}>U</img>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR41JHBUsNs9jLmkocgeemX_BKE57pAnzqrJg&s" className='cross' onClick={() => removeFromCart(item._id)}><img>
               </div>
               <hr />
             </div>
