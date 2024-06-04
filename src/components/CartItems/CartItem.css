@@ -1,4 +1,9 @@
-
+.add{
+    color:green;
+}
+.cross{
+    color:red;
+}
 .cartitems{
     margin: 100px 10%;
 }
